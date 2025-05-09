@@ -1,112 +1,126 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>Online HTML Editor</title>
+</head>
+<body>
+<h1>Online HTML Editor</h1>
+<p>This is real time online HTML Editor</p>
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1, h2 {
+            color: #d32f2f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .contact-form input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .contact-form button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
     <table>
         <tr>
-            <td> <img src="profil.jpg" alt="profile" width="200px" height="200px " style="float:left">
-            </td>
+            <td><img src="profil.jpg" alt="Profile Image" width="200px" height="200px"></td>
             <td>
-                <h1 style="color:red">Mohammad Maqbool</h1>
-                <p><b>I'm certified Ethical Debugger.</b></p>
-                <p>I 💕 Debugging Everyone Everything and Everytime. </p>
+                <h1>Mohammad Maqbool</h1>
+                <p><strong>Certified Ethical Debugger</strong></p>
+                <p>I 💕 Debugging Everyone, Everything, and Every Time.</p>
             </td>
         </tr>
     </table>
     <hr>
 
     <h2>Education</h2>
-    <table border="">
-        <tr>
-            <th>Qualification</th>
-            <th>Institute</th>
-            <th>Year</th>
-            <th>Percentage</th>
-        </tr>
-
-        <tr>
-            <td>M.C.A</td>
-            <td>PB Siddhartha college</td>
-            <td>2024-2026</td>
-            <td>6.1</td>
-        </tr>
-
-        <tr>
-            <td>B.C.A</td>
-            <td>K.B.N College</td>
-            <td>2021-2024</td>
-            <td>6.4</td>
-        </tr>
-
-        <tr>
-            <td>Intermediate</td>
-            <td>PB Siddhartha Junior College</td>
-            <td>2019-2021</td>
-            <td>6.8</td>
-        </tr>
-
-        <tr>
-            <td>10th</td>
-            <td>Priyadarsini Convent</td>
-            <td>2018</td>
-            <td>7.5</td>
-        </tr>
+    <table>
+        <tr><th>Qualification</th><th>Institute</th><th>Year</th><th>Percentage</th></tr>
+        <tr><td>M.C.A</td><td>PB Siddhartha College</td><td>2024-2026</td><td>6.1</td></tr>
+        <tr><td>B.C.A</td><td>K.B.N College</td><td>2021-2024</td><td>6.4</td></tr>
+        <tr><td>Intermediate</td><td>PB Siddhartha Junior College</td><td>2019-2021</td><td>6.8</td></tr>
+        <tr><td>10th</td><td>Priyadarsini Convent</td><td>2018</td><td>7.5</td></tr>
     </table>
 
     <h2>Technical Expertise</h2>
     <ul>
-        <li>Frontend development</li>
+        <li>Frontend Development</li>
         <li>Python - Django and Flask</li>
-        <li>Java with D.S.A</li>
+        <li>Java with DSA</li>
     </ul>
 
-    <h2>My Projects</h2>
-    <p><b>Scanner-Code Generator using JS</b></p>
-    <p><b>Blogging Web Application</b></p>
-    <p><b><a href="#">our project</a></b></p>
+    <h2>Projects</h2>
     <ul>
-        <li>
-            This is our Project
-        </li>
-
+        <li><strong>Scanner-Code Generator using JS</strong></li>
+        <li><strong>Blogging Web Application</strong></li>
+        <li><a href="#">Our Project</a></li>
     </ul>
 
-    <h2>Contact Me </h2>
-    <fieldset>
-        <legend>Contact Form</legend>
+    <h2>Contact Me</h2>
+    <div class="contact-form">
         <form action="https://formspree.io/f/mzzrvdal" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter the Name">
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
             <br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter Email">
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
             <br><br>
+
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required placeholder="Mobile Number">
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
             <br><br>
-            <label for="textarea">Message:</label>
-            <textarea name="textarea" id="textarea" rows="5" cols="40"></textarea>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4" required placeholder="Write your message"></textarea>
             <br><br>
+
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
         </form>
-    </fieldset>
+    </div>
 
-    <p>Contact me at : <a href="mailto:skmaqbool481@gmail.com">Email</a></p>
-
-    <p>Contact Number : <a href="callto:9121900673">Contact No</a></p>
-
-    <p>Linkdin : <a href="#">Linkdin</a></p>
-
-    <p>GitHUB : <a href="#">GitHub</a></p>
+    <p><strong>Email:</strong> <a href="mailto:skmaqbool481@gmail.com">skmaqbool481@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="callto:9121900673">9121900673</a></p>
+    <p><strong>LinkedIn:</strong> <a href="#">LinkedIn Profile</a></p>
+    <p><strong>GitHub:</strong> <a href="#">GitHub Profile</a></p>
 
 </body>
-
 </html>
